@@ -32,11 +32,6 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-## Photograph
-
-Giovanni Fregni / Wikimedia Commons, CC0.
-https://commons.wikimedia.org/wiki/File:Val_Di_Funes_(187440387).jpeg
-
 ## Map tiles and data
 
 © OpenStreetMap contributors. Data license and attribution: https://www.openstreetmap.org/copyright
