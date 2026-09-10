@@ -199,3 +199,5 @@ main{height:auto}
 .check-row label{font-size:15px}
 }
 
+
+.header-actions{display:flex;gap:6px;align-items:center}.backup-body{padding:22px 25px}.backup-body p{font-size:14px;line-height:1.75}.backup-body section{padding:18px 0;border-top:1px solid var(--line)}.backup-body h3{font-size:17px;margin:0 0 10px}.backup-body label{display:block;margin-bottom:8px}.backup-body input[type=file]{font-size:14px;padding:10px}.backup-body .storage-note{margin:12px 0 0}#import-preview{white-space:pre-line}@media(max-width:480px){header{padding:7px 10px}.brand-icon{display:none}.header-actions{gap:4px}.header-actions .outline{font-size:12px;padding:7px 8px}.backup-body{padding:18px}}

@@ -23,11 +23,19 @@
   let canSave = true;
   const notice = text => { $('save-status').textContent = text; $('save-status').hidden = false; };
   function validState(s) {
-    return s && Array.isArray(s.tasks) && Array.isArray(s.expenses) &&
-      s.tasks.every(t => t && typeof t.id === 'string' && typeof t.text === 'string' && categories.includes(t.category) && typeof t.done === 'boolean') &&
-      s.expenses.every(e => e && typeof e.id === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(e.date) && typeof e.item === 'string' &&
-        Number.isSafeInteger(e.cents) && e.cents > 0 && ['EUR', 'KRW'].includes(e.currency) &&
-        typeof e.method === 'string' && typeof e.payer === 'string' && typeof e.note === 'string');
+    const text = (v, max) => typeof v === 'string' && v.length <= max;
+    const date = value => {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+      const parsed = new Date(value + 'T00:00:00Z');
+      return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
+    };
+    return !!s && Array.isArray(s.tasks) && Array.isArray(s.expenses) && s.tasks.length <= 10000 && s.expenses.length <= 10000 &&
+      s.tasks.every(t => t && text(t.id, 100) && t.id.length > 0 && text(t.text, 160) && t.text.trim().length > 0 && categories.includes(t.category) && typeof t.done === 'boolean') &&
+      new Set(s.tasks.map(t => t.id)).size === s.tasks.length &&
+      s.expenses.every(e => e && text(e.id, 100) && e.id.length > 0 && text(e.date, 10) && date(e.date) && text(e.item, 160) && e.item.trim().length > 0 &&
+        Number.isSafeInteger(e.cents) && e.cents > 0 && e.cents <= 99999999900 && ['EUR', 'KRW'].includes(e.currency) && (e.currency !== 'KRW' || e.cents % 100 === 0) &&
+        text(e.method, 60) && text(e.payer, 60) && e.payer.trim().length > 0 && text(e.note, 1000)) &&
+      new Set(s.expenses.map(e => e.id)).size === s.expenses.length;
   }
   try {
     const saved = localStorage.getItem(key);
@@ -165,5 +173,52 @@
     if (e.key !== key || !e.newValue) return;
     try { const next = JSON.parse(e.newValue); if (validState(next)) { state = next; renderTasks(); renderExpenses(); } } catch { /* Keep the last valid state. */ }
   });
+  let pendingRestore = null;
+  const backupDialog = $('backup-dialog');
+  function backupCounts() {
+    $('backup-counts').textContent = `준비 ${state.tasks.length}개 (완료 ${state.tasks.filter(t => t.done).length}개) · 경비 ${state.expenses.length}건`;
+  }
+  $('backupBtn').onclick = () => { backupCounts(); backupDialog.showModal(); };
+  $('close-backup').onclick = () => backupDialog.close();
+  $('export-backup').onclick = () => {
+    const backup = { app: 'italia-honeymoon', version: 1, exportedAt: new Date().toISOString(), tasks: state.tasks, expenses: state.expenses };
+    const file = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(file);
+    const link = document.createElement('a');
+    link.href = url; link.download = `italia-honeymoon-${backup.exportedAt.replace(/[:.]/g, '-')}.json`;
+    document.body.appendChild(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+  };
+  let importSequence = 0;
+  $('import-backup').addEventListener('change', async e => {
+    const sequence = ++importSequence;
+    pendingRestore = null; $('restore-backup').disabled = true;
+    const file = e.target.files[0];
+    if (!file) { $('import-preview').textContent = '백업 파일을 선택하세요.'; return; }
+    if (file.size > 3 * 1024 * 1024) { $('import-preview').textContent = '3MB 이하의 백업 파일을 선택하세요.'; return; }
+    try {
+      const data = JSON.parse(await file.text());
+      if (sequence !== importSequence) return;
+      if (data.app !== 'italia-honeymoon' || data.version !== 1 || !validState(data)) throw new Error('Invalid backup');
+      pendingRestore = {
+        tasks: data.tasks.map(({ id, category, text, done }) => ({ id, category, text, done })),
+        expenses: data.expenses.map(({ id, date, item, cents, currency, method, payer, note }) => ({ id, date, item, cents, currency, method, payer, note }))
+      };
+      $('import-preview').textContent = `백업 확인: 준비 ${data.tasks.length}개 · 경비 ${data.expenses.length}건\n현재 기록 전체를 이 내용으로 교체합니다. 기존 기록은 먼저 백업하세요.`;
+      $('restore-backup').disabled = false;
+    } catch {
+      if (sequence !== importSequence) return;
+      $('import-preview').textContent = '지원하지 않거나 손상된 백업 파일입니다. 기존 기록은 변경되지 않았습니다.';
+    }
+  });
+  $('restore-backup').onclick = () => {
+    if (!pendingRestore || !confirm('이 브라우저의 체크리스트와 경비 전체를 선택한 백업으로 교체할까요? 기존 기록은 백업 파일이 있어야 되돌릴 수 있습니다.')) return;
+    try { localStorage.setItem(key, JSON.stringify(pendingRestore)); }
+    catch { $('import-preview').textContent = '브라우저에 저장하지 못해 복원하지 않았습니다. 기존 기록은 변경되지 않았습니다.'; return; }
+    state = pendingRestore; canSave = true; pendingRestore = null;
+    $('save-status').hidden = true; $('restore-backup').disabled = true; $('import-backup').value = '';
+    renderTasks(); renderExpenses(); backupCounts();
+    $('import-preview').textContent = '복원했습니다. 다음에 같은 브라우저에서 열어도 이 기록이 유지됩니다.';
+  };
   renderTasks(); renderExpenses();
 })();
