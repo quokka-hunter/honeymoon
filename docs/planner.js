@@ -9,7 +9,7 @@
     ['서류·결제', '여권과 입국 요건 확인'], ['서류·결제', '국제운전면허증·한국 운전면허증 준비'],
     ['서류·결제', '여행자보험 가입'], ['서류·결제', '해외 결제 카드와 유로 현금 준비'],
     ['서류·결제', '항공·숙소·렌트 예약 내역 저장'],
-    ['렌터카', '3/28 밀라노 수령·4/9 MXP 반납 예약'], ['렌터카', '부활절 수령 영업시간 확인'],
+    ['렌터카', '예약 완료: 3/28 10시 밀라노 중앙역 수령·4/9 16시 같은 영업소 반납'], ['렌터카', '부활절 수령 영업시간 확인'],
     ['렌터카', '보험·보증금·주유·겨울 장비 조건 확인'], ['렌터카', '숙소 주차장과 ZTL 진입 경로 확인'],
     ['짐 챙기기', '방풍 외투·보온 의류·장갑'], ['짐 챙기기', '편한 운동화와 미끄럼 방지 신발'],
     ['짐 챙기기', '충전기·보조배터리·멀티 어댑터'], ['짐 챙기기', '상비약과 개인 세면도구'],
@@ -43,6 +43,9 @@
       const parsed = JSON.parse(saved);
       if (!validState(parsed)) throw new Error('Invalid saved data');
       state = parsed;
+      // Only update the untouched legacy rental hint; keep custom tasks and completion state.
+      const rentalTask = state.tasks.find(t => t.id === 'default-9' && t.text === '3/28 밀라노 수령·4/9 MXP 반납 예약');
+      if (rentalTask) rentalTask.text = '예약 완료: 3/28 10시 밀라노 중앙역 수령·4/9 16시 같은 영업소 반납';
     }
   } catch {
     canSave = false;
