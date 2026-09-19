@@ -354,8 +354,8 @@ const days = [
     "title": "운하에서 토스카나로",
     "sub": "볼로냐 숙박 없이 시에나로 바로",
     "stay": "시에나 · 성벽 밖 주차 가능한 숙소 / 2박 중 1박 · 토스카나 1/4박",
-    "move": "운전 약 4~5시간 + 휴식·출차 1~1.5시간 (계획용 추정)",
-    "note": "베네치아 오전 관람 후 시에나로 바로 이동합니다. 볼로냐는 고속도로 경유만 하고 방문·숙박하지 않습니다. 이날 시에나 입장 예약은 잡지 않고 대성당은 다음 날 관람.",
+    "move": "운전 약 4~5시간 + Cantagallo Ovest 휴식 45~60분 + 본섬 출차 이동 (계획용 추정)",
+    "note": "11:00~11:30 트론케토 출발 → 13:30 전후 Cantagallo Ovest에서 주유·점심 → 16:30~17:30 시에나 도착 목표. 볼로냐 시내 방문 없이 고속도로 휴게소만 이용. 정체·피로가 있으면 더 이른 휴게소에서 추가 휴식.",
     "parking": [
       {
         "name": "Santa Caterina · 기본 주차장",
@@ -368,6 +368,12 @@ const days = [
         "query": "Parcheggio Il Campo Siena",
         "desc": "캄포 광장 방문 대안. 내비에 광장이 아니라 주차장명을 입력하고 ZTL 표지와 공식 진입 안내를 확인.",
         "url": "https://sigericospa.it/parcheggi-in-struttura/"
+      },
+      {
+        "name": "Cantagallo Ovest · 남행 휴게소",
+        "query": "Area di Servizio Cantagallo Ovest A1 direzione Firenze",
+        "desc": "A1 198.9km DirSUD. 고속도로 안에서 주유·식사·주차. 상용차 전용 주유구역 대신 실제 차량에 맞는 주유기 확인.",
+        "url": "https://www.q8truck.com/pt/stations/cantagallo-ovest-boa1-q8-it3888"
       }
     ],
     "spots": [
@@ -399,13 +405,24 @@ const days = [
         "lat": 45.4423,
         "lng": 12.3056,
         "kind": "주차",
-        "desc": "차량 회수 후 시에나로 출발. 고속도로에서 점심·휴식 1회.",
+        "desc": "차량 회수 후 A13–볼로냐–A1 남행으로 시에나 이동. 약 2~2.5시간 뒤 Cantagallo Ovest에서 주유·점심·휴식.",
         "tip": "본섬에서 주차장 이동 시간을 확보.",
         "query": "Tronchetto Parking Venezia",
         "url": "https://www.tronchettoparking.it/it/"
       },
       {
-        "time": "16:30–17:30",
+        "time": "13:30–14:30 예상",
+        "name": "Cantagallo Ovest · 주유와 점심",
+        "lat": 44.455051,
+        "lng": 11.280162,
+        "kind": "휴게소",
+        "desc": "볼로냐 남쪽 A1 198.9km, Firenze/Roma 남행 방향 휴게소. 주유·화장실·점심을 한 번에 해결하고 45~60분 휴식. Autogrill의 La Fucina 셀프서비스 식당 또는 Bistrot Bakery 피자·포카치아 중 선택.",
+        "tip": "반대편 Est와 혼동하지 말고 A1 남행 Cantagallo Ovest 표지로 진입. 주유소 공식 자료는 디젤 등 상용차 설비를 안내하므로 렌터카 연료에 맞는 승용차 주유기·결제 가능 여부를 현장에서 확인. 식당 영업·메뉴는 2027년 재확인.",
+        "query": "Area di Servizio Cantagallo Ovest A1 direzione Firenze",
+        "url": "https://www.autogrill.it/locale/cantagallo/"
+      },
+      {
+        "time": "16:30–17:30 예상",
         "name": "Santa Caterina · 시에나 주차",
         "lat": 43.3162,
         "lng": 11.326,
