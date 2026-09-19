@@ -201,3 +201,5 @@ main{height:auto}
 
 
 .header-actions{display:flex;gap:6px;align-items:center}.backup-body{padding:22px 25px}.backup-body p{font-size:14px;line-height:1.75}.backup-body section{padding:18px 0;border-top:1px solid var(--line)}.backup-body h3{font-size:17px;margin:0 0 10px}.backup-body label{display:block;margin-bottom:8px}.backup-body input[type=file]{font-size:14px;padding:10px}.backup-body .storage-note{margin:12px 0 0}#import-preview{white-space:pre-line}@media(max-width:480px){header{padding:7px 10px}.brand-icon{display:none}.header-actions{gap:4px}.header-actions .outline{font-size:12px;padding:7px 8px}.backup-body{padding:18px}}
+
+.parking-section{padding:0 24px 20px}.parking-section h3{font-size:17px}.parking-card{margin:10px 0;padding:16px;border:1px solid #d8e2dc;border-radius:12px;background:#f0f5f1}.parking-card p{font-size:14px;line-height:1.7;margin:8px 0}.parking-card .actions{flex-wrap:wrap}
