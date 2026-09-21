@@ -99,7 +99,7 @@ const days = [
     "sub": "렌터카 수령, 로미오와 줄리엣의 도시",
     "stay": "베로나 · 구시가지 외곽 주차 가능한 숙소 / 1박",
     "move": "약 160km · 운전 2~2.5시간 + 연휴 정체",
-    "note": "Hertz 예약서 기준: 2027/3/28(일) 10:00 밀라노 중앙역 영업소 수령. 수령 주소 Via Cappellini 10, Milano 20124. 예약서의 일반 일요일 영업시간 08:00–18:00. 부활절 특별 운영·차량 준비는 출발 전 확인. 이날 서머타임 시작으로 현지 시계가 1시간 빨라집니다.",
+    "note": "Hertz 예약서 기준: 2027/3/28(일) 10:00 밀라노 중앙역 영업소 수령. 수령 주소 Via Cappellini 10, Milano 20124. 예약서의 일반 일요일 영업시간 08:00–18:00. 부활절 특별 운영·차량 준비는 출발 전 확인. 이날 서머타임 시작으로 현지 시계가 1시간 빨라집니다. 주유 계획: 전체 약 1,600~1,750km(기존 구간 거리+시내 접근의 계획 추정). 만탱크 수령, 탱크 40L·7L/100km를 가정하며 실차 제원은 아닙니다. 인수 시 유종·탱크·반납 조건을 확인하고 조정.",
     "spots": [
       {
         "time": "09:45 도착 / 10:00 예약",
@@ -108,7 +108,7 @@ const days = [
         "lng": 9.2036,
         "kind": "예약 완료",
         "desc": "Via Cappellini 10, Milano 20124에서 수령. 예약 차급은 자동변속 Compact 4–5 Door, 예시 차량 Jeep Avenger (Y0). 인수·외관 촬영 후 10:45~11:00 출발 목표.",
-        "tip": "여권·한국 운전면허증·국제운전면허증·운전자 명의 신용카드 지참. 연료 종류·반납 연료 조건·겨울 장비의 실제 제공 품목은 인수 시 확인. 지도 핀은 주소 주변의 대표 위치.",
+        "tip": "여권·한국 운전면허증·국제운전면허증·운전자 명의 신용카드 지참. 연료 종류·반납 연료 조건·겨울 장비의 실제 제공 품목은 인수 시 확인. 지도 핀은 주소 주변의 대표 위치. 연료 1/4 이하 또는 주행가능거리 < 다음 주유소까지 거리+100km이면 계획보다 앞당겨 보충. 아래 주유량은 7L/100km 가정.",
         "query": "Hertz Via Cappellini 10 Milano",
         "url": "",
         "id": "D003-S01"
@@ -375,7 +375,7 @@ const days = [
         "lng": 11.5688,
         "kind": "귀환",
         "desc": "혼잡 전 하산해 차로 오르티세이 숙소로 돌아옵니다. 마지막 밤은 스파와 저녁으로 마무리합니다.",
-        "tip": "다음 날 베네치아 장거리 이동을 위해 짐은 저녁에 미리 정리합니다.",
+        "tip": "다음 날 베네치아 장거리 이동을 위해 짐은 저녁에 미리 정리합니다. 복귀 후 연료 확인. 다음 날 키우사까지 약 20~30km; 주행가능거리 130km 미만이면 이날 가까운 영업 주유소에서 먼저 보충.",
         "query": "Ortisei",
         "id": "D006-S06"
       }
@@ -398,8 +398,8 @@ const days = [
     "title": "설산에서 물의 도시로",
     "sub": "차는 섬 입구에, 여행은 배 위에서",
     "stay": "베네치아 본섬 · 산타루치아역/산폴로 인근 / 1박",
-    "move": "약 300km · 운전 3.5~4.5시간 + 수상 이동",
-    "note": "A22–A4 경유를 기본으로 두고 산악 고개 횡단은 제외. 본섬 숙박용 작은 가방을 준비하되 귀중품은 모두 소지합니다.",
+    "move": "A22–A4 경유 약 310~340km · 운전 3.5~4.5시간 + 주유·휴식 + 수상 이동 (계획 추정)",
+    "note": "A22–A4 경유를 기본으로 두고 산악 고개 횡단은 제외. 본섬 숙박용 작은 가방을 준비하되 귀중품은 모두 소지합니다. 키우사에서 A22 진입 전 첫 주유. 수령 후 약 410~440km 시점.",
     "spots": [
       {
         "time": "09:00",
@@ -413,7 +413,19 @@ const days = [
         "id": "D007-S01"
       },
       {
-        "time": "13:30",
+        "id": "D007-S05",
+        "time": "09:35–09:55 예상",
+        "name": "Eni Chiusa · A22 진입 전 주유",
+        "kind": "주유",
+        "lat": 46.637713,
+        "lng": 11.561108,
+        "query": "Eni Piazza Fraghes 5 Chiusa",
+        "url": "https://www.benzina24.it/trentino-alto-adige/bolzano/chiusa/agip-eni-52575-chiusa-38788/",
+        "desc": "Piazza Fraghes 5, Chiusa. 오르티세이에서 내려와 A22 진입 전 가득 주유. 수령 후 베로나·오르티세이·시우시 왕복을 합쳐 약 410~440km, 약 29~31L 소비 시점. 주유·진입에 20~30분 여유를 잡고 A22–A4로 베네치아 이동.",
+        "tip": "9/18 공시 Self: 휘발유 €2.149/L·경유 €2.274/L. 인근 Q8 €2.199/€2.428보다 저렴. 고속도로 안 주유소와 혼동하지 않기. 2026-09-21 조회 가격이며 2027년 확정가가 아닙니다. 당일 유종·Self 가격·영업·카드 결제 확인. 실제 주행가능거리 우선."
+      },
+      {
+        "time": "14:00 전후",
         "name": "트론케토 주차장",
         "lat": 45.4423,
         "lng": 12.3056,
@@ -464,8 +476,8 @@ const days = [
     "title": "운하에서 토스카나로",
     "sub": "볼로냐 숙박 없이 시에나로 바로",
     "stay": "시에나 · 성벽 밖 주차 가능한 숙소 / 2박 중 1박 · 토스카나 1/4박",
-    "move": "운전 약 4~5시간 + Cantagallo Ovest 휴식 45~60분 + 본섬 출차 이동 (계획용 추정)",
-    "note": "11:00~11:30 트론케토 출발 → 13:30 전후 Cantagallo Ovest에서 주유·점심 → 16:30~17:30 시에나 도착 목표. 볼로냐 시내 방문 없이 고속도로 휴게소만 이용. 정체·피로가 있으면 더 이른 휴게소에서 추가 휴식.",
+    "move": "약 320~350km · 운전 4~5시간 + Marghera 주유·접근 여유 + Cantagallo 휴식 45~60분 (계획 추정)",
+    "note": "11:00~11:30 트론케토 출발 → Marghera Eni 주유 → 14:00 전후 Cantagallo Ovest 점심·휴식 → 17:00~18:00 시에나 도착 목표. 키우사 주유 후 약 300~330km 시점에 미리 채웁니다. 볼로냐 시내 방문 없이 A4–A13–A1 남행. Cantagallo 주유는 잔량 부족 때만.",
     "parking": [
       {
         "name": "Santa Caterina · 기본 주차장",
@@ -484,7 +496,7 @@ const days = [
       {
         "name": "Cantagallo Ovest · 남행 휴게소",
         "query": "Area di Servizio Cantagallo Ovest A1 direzione Firenze",
-        "desc": "A1 198.9km DirSUD. 고속도로 안에서 주유·식사·주차. 상용차 전용 주유구역 대신 실제 차량에 맞는 주유기 확인.",
+        "desc": "A1 198.9km DirSUD. 점심·화장실·주차 휴식. 주유는 Marghera Eni에서 마치고 이곳은 잔량 부족 시 보충 대안으로만 이용.",
         "url": "https://www.q8truck.com/pt/stations/cantagallo-ovest-boa1-q8-it3888",
         "id": "D008-P03"
       }
@@ -520,26 +532,38 @@ const days = [
         "lat": 45.4423,
         "lng": 12.3056,
         "kind": "주차",
-        "desc": "차량 회수 후 A13–볼로냐–A1 남행으로 시에나 이동. 약 2~2.5시간 뒤 Cantagallo Ovest에서 주유·점심·휴식.",
+        "desc": "차량 회수 후 Eni Via Trieste 205 Marghera를 경유해 A4–A13–볼로냐–A1 남행으로 이동. 주유 후 약 2~2.5시간 뒤 Cantagallo Ovest 점심·휴식.",
         "tip": "본섬에서 주차장 이동 시간을 확보.",
         "query": "Tronchetto Parking Venezia",
         "url": "https://www.tronchettoparking.it/it/",
         "id": "D008-S03"
       },
       {
-        "time": "13:30–14:30 예상",
-        "name": "Cantagallo Ovest · 주유와 점심",
+        "id": "D008-S07",
+        "time": "11:30–12:00 예상",
+        "name": "Eni Marghera · 시에나 이동 전 주유",
+        "kind": "주유",
+        "lat": 45.47733,
+        "lng": 12.19893,
+        "query": "Eni Via Trieste 205 Marghera Venezia",
+        "url": "https://www.prezzibenzina.it/distributori/7783",
+        "desc": "Via Trieste 205. 트론케토 출차 후 Marghera를 거쳐 A4 진입 전에 가득 주유. 키우사 주유 이후 약 300~330km, 약 21~23L 소비. 주유 15~20분 외 진입·우회에 10~15분 계획 여유(실측 아님).",
+        "tip": "9/19 공시 Self: 휘발유 €2.109/L·경유 €2.274/L. 비교 후보 Q8 Malcontenta €2.139/€2.359, Vega Romea €2.159/€2.319보다 저렴해 선정. 방향별 진입은 내비·현장 표지 우선. 2026-09-21 조회 가격이며 2027년 확정가가 아닙니다. 당일 유종·Self 가격·영업·카드 결제 확인. 실제 주행가능거리 우선."
+      },
+      {
+        "time": "14:00–15:00 예상",
+        "name": "Cantagallo Ovest · 점심과 휴식",
         "lat": 44.455051,
         "lng": 11.280162,
         "kind": "휴게소",
-        "desc": "볼로냐 남쪽 A1 198.9km, Firenze/Roma 남행 방향 휴게소. 주유·화장실·점심을 한 번에 해결하고 45~60분 휴식. Autogrill의 La Fucina 셀프서비스 식당 또는 Bistrot Bakery 피자·포카치아 중 선택.",
-        "tip": "반대편 Est와 혼동하지 말고 A1 남행 Cantagallo Ovest 표지로 진입. 주유소 공식 자료는 디젤 등 상용차 설비를 안내하므로 렌터카 연료에 맞는 승용차 주유기·결제 가능 여부를 현장에서 확인. 식당 영업·메뉴는 2027년 재확인.",
+        "desc": "볼로냐 남쪽 A1 198.9km Firenze/Roma 남행 휴게소. 화장실·점심·45~60분 휴식. Autogrill La Fucina 또는 Bistrot Bakery 중 선택. Marghera에서 주유했으면 여기서는 추가 주유하지 않습니다.",
+        "tip": "반대편 Est와 혼동하지 않기. 연료가 예상보다 빨리 줄면 휴게소에서 필요한 만큼 보충. 식당 영업·메뉴는 2027년 재확인.",
         "query": "Area di Servizio Cantagallo Ovest A1 direzione Firenze",
         "url": "https://www.autogrill.it/locale/cantagallo/",
         "id": "D008-S04"
       },
       {
-        "time": "16:30–17:30 예상",
+        "time": "17:00–18:00 예상",
         "name": "Santa Caterina · 시에나 주차",
         "lat": 43.3162,
         "lng": 11.326,
@@ -551,7 +575,7 @@ const days = [
         "id": "D008-S05"
       },
       {
-        "time": "18:00–20:00",
+        "time": "18:30–20:00",
         "name": "캄포 광장",
         "lat": 43.3186,
         "lng": 11.3317,
@@ -649,8 +673,8 @@ const days = [
     "title": "와인 마을을 지나 농가로",
     "sub": "몬탈치노·바뇨 비뇨니·피엔차",
     "stay": "Fattoria del Colle · Trequanda / 추천 숙소 2박 중 1박 · 토스카나 3/4박 · 예약 미확정",
-    "move": "시에나 → 몬탈치노 → 바뇨 비뇨니 → 피엔차 → 트레콴다 · 총 운전 약 2.5~3시간",
-    "note": "서쪽 몬탈치노에서 동쪽 피엔차를 거쳐 농가로 이동합니다. 이날은 마을 관광, 와인 시음은 다음 날 숙소 현장 투어에 배치. 모든 시간은 주차·교통에 따라 조정.",
+    "move": "약 100~120km · 시에나 → 몬탈치노 → 바뇨 비뇨니 → 피엔차 → 트레콴다 · 운전 2.5~3시간 + 주유 15~20분 (계획 추정)",
+    "note": "서쪽 몬탈치노에서 동쪽 피엔차를 거쳐 농가로 이동합니다. 이날은 마을 관광, 와인 시음은 다음 날 숙소 현장 투어에 배치. 모든 시간은 주차·교통에 따라 조정. 출발 직후 남쪽 ICM에서 가득 주유. 직전 Marghera 주유 후 약 320~350km.",
     "parking": [
       {
         "name": "몬탈치노 · Fortezza 주변 주차 후보",
@@ -686,6 +710,18 @@ const days = [
         "query": "Parcheggio Santa Caterina Siena",
         "url": "",
         "id": "D010-S01"
+      },
+      {
+        "id": "D010-S07",
+        "time": "09:10–09:30 예상",
+        "name": "ICM Siena · 발도르차 출발 전 주유",
+        "kind": "주유",
+        "lat": 43.304625,
+        "lng": 11.321379,
+        "query": "ICM distributore Via Massetana Romana Siena",
+        "url": "https://www.benzina24.it/toscana/siena/siena/icm-icm-siena-9369/",
+        "desc": "Via Massetana Romana. 시에나 주차장 출차 후 남쪽에서 가득 주유하고 몬탈치노로 이동. Marghera 주유 후 약 320~350km, 약 22~25L 소비. 일요일 농촌 이동 전 시내에서 연료 확보.",
+        "tip": "9/18 공시 Self: 휘발유 €2.127/L·경유 €2.267/L. Servito는 각각 €0.15/L 비쌈. 가까운 Tamoil Massetana 61·Aquila Massetana Romana 51은 휘발유 €2.129로 거의 같아 영업·진입이 편한 곳으로 대체 가능. Beyfin €1.959는 8/9 오래된 공시라 제외. 일요일 Self 작동은 전날 확인. 2026-09-21 조회 가격이며 2027년 확정가가 아닙니다. 당일 유종·Self 가격·영업·카드 결제 확인. 실제 주행가능거리 우선."
       },
       {
         "time": "10:15–11:45",
@@ -818,7 +854,7 @@ const days = [
     "title": "농가에서 르네상스의 도시로",
     "sub": "오전 이동 후 기존 피렌체 일정",
     "stay": "피렌체 · ZTL 밖 주차 가능한 숙소 / 2박 중 1박",
-    "move": "트레콴다 → A1 → Villa Costanza · 운전 약 1.5~2시간 + 트램·주차",
+    "move": "약 110~130km · 트레콴다 → A1 → Villa Costanza · 운전 1.5~2시간 + 트램·주차 (계획 추정)",
     "note": "농가에서 조식 후 09시 무렵 출발. A1 경유로 Villa Costanza 주차장에 진입하고 트램 T1으로 도심 이동. 피렌체 2박과 우피치 관람 날짜는 유지.",
     "spots": [
       {
@@ -952,7 +988,7 @@ const days = [
     "sub": "산을 넘어 에밀리아로",
     "stay": "파르마 · 구시가지 외곽 주차 가능한 숙소 / 1박",
     "move": "약 190km · 운전 2.5~3시간",
-    "note": "아침 치즈 공장 투어는 오늘 이동과 맞추기 어렵습니다. 이번 기본안에서는 파르마 도심과 여유로운 마지막 저녁을 선택합니다.",
+    "note": "아침 치즈 공장 투어는 오늘 이동과 맞추기 어렵습니다. 이번 기본안에서는 파르마 도심과 여유로운 마지막 저녁을 선택합니다. 시에나 주유 이후 약 400~450km. 파르마 도착 시 주행가능거리 250km 미만 또는 잔량 1/4 이하면 Eni에서 10~15L 보충. 충분하면 생략하고 4/9 밀라노에서 최종 주유.",
     "spots": [
       {
         "time": "09:30",
@@ -964,6 +1000,18 @@ const days = [
         "tip": "",
         "query": "Villa Costanza · 차량 회수",
         "id": "D014-S01"
+      },
+      {
+        "id": "D014-S06",
+        "time": "12:30–12:50 예상 · 잔량 부족 시",
+        "name": "Eni Parma · 필요할 때 10~15L 보충",
+        "kind": "조건부 주유",
+        "lat": 44.832323,
+        "lng": 10.338919,
+        "query": "Eni Via San Leonardo 144 A Parma",
+        "url": "https://prezzibenzina.live/distributore/agip-eni-via-san-leonardo-144-a-43122-parma-17996",
+        "desc": "Via San Leonardo 144/A. A1 Parma 출구에서 도심으로 들어오는 길의 보충 후보. 시에나 주유 후 약 400~450km, 약 28~32L 소비. 주행가능거리 250km 미만 또는 잔량 1/4 이하면 10~15L 보충하고 Toschi로 이동. 충분하면 생략.",
+        "tip": "9/18 공시 Self: 휘발유 €2.159/L·경유 €2.339/L. 도시 전체 최저가는 아니지만 소량 보충을 위해 먼 주유소를 우회하지 않는 선택. 다음 날 밀라노 Tamoil이 더 저렴해 여기서는 만탱크 대신 필요한 만큼. 2026-09-21 조회 가격이며 2027년 확정가가 아닙니다. 당일 유종·Self 가격·영업·카드 결제 확인. 실제 주행가능거리 우선."
       },
       {
         "time": "13:00",
@@ -1056,15 +1104,15 @@ const days = [
         "id": "D015-S02"
       },
       {
-        "time": "14:00–15:00",
-        "name": "밀라노 · 반납 전 주유",
-        "lat": 45.4804,
-        "lng": 9.2036,
+        "time": "14:00–14:30 목표",
+        "name": "Tamoil Piazza Durante · 반납 전 최종 주유",
+        "lat": 45.489296,
+        "lng": 9.223776,
         "kind": "주유",
-        "desc": "Hertz 인수 시 확인한 연료 조건에 맞춰 반납점 접근 전 주유. 실제 진입 경로의 영업 중 주유소를 선택하고 영수증 보관.",
-        "tip": "지도 핀은 반납 권역의 대표 위치이며 특정 주유소가 아닙니다. 내비에서 차량 연료에 맞는 주유소 확인.",
-        "query": "distributore carburante vicino Via Alfredo Cappellini Milano",
-        "url": "",
+        "desc": "Piazza Francesco Durante의 Tamoil 8051. 파르마 출발 후 약 130~150km. Hertz Via Alfredo Cappellini 21 반납점까지 약 3~5km·15~25분의 시내 이동 여유(계획 추정). 계약상 반납 연료 수준으로 맞추며 Full-to-full이면 가득 주유. 영수증·계기판 사진 보관.",
+        "tip": "9/14 공시 Self: 휘발유 €1.999/L·경유 €2.099/L. 근처 Esso Leoncavallo 25 €2.129/€2.259, Tamoil Brianza 32 €2.279/€2.329보다 저렴. 반납 전 주유소 거리·영수증 요건은 인수 시 확인. 15:30 Hertz 도착 우선. 2026-09-21 조회 가격이며 2027년 확정가가 아닙니다. 당일 유종·Self 가격·영업·카드 결제 확인. 실제 주행가능거리 우선.",
+        "query": "Tamoil Piazza Francesco Durante Milano 8051",
+        "url": "https://www.benzina24.it/lombardia/milano/milano/tamoil-8051-33860/",
         "id": "D015-S03"
       },
       {
