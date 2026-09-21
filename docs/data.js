@@ -17,7 +17,8 @@ const days = [
         "kind": "공항",
         "desc": "입국·수하물 수령에 1~2시간 여유를 두고 시내로 이동. Malpensa Express 또는 택시를 이용합니다.",
         "tip": "터미널과 운행 시간은 항공권·공식 교통편에서 확인.",
-        "query": "밀라노 말펜사 공항"
+        "query": "밀라노 말펜사 공항",
+        "id": "D001-S01"
       },
       {
         "time": "체크인 후",
@@ -27,9 +28,11 @@ const days = [
         "kind": "산책",
         "desc": "호텔에 짐을 놓고 골목을 천천히 걷기. 첫 저녁은 리소토 알라 밀라네제와 가벼운 식사.",
         "tip": "피곤하면 산책을 생략하고 호텔 근처에서 식사.",
-        "query": "브레라 지구"
+        "query": "브레라 지구",
+        "id": "D001-S02"
       }
-    ]
+    ],
+    "id": "D001"
   },
   {
     "date": "3.27",
@@ -49,7 +52,8 @@ const days = [
         "kind": "예약",
         "desc": "대성당과 루프톱을 함께 관람. 첨탑 사이에서 둘만의 사진을 남기세요.",
         "tip": "공식 사이트에서 입장 시간 예약. 예배·행사에 따라 관람 변경 가능.",
-        "query": "밀라노 두오모"
+        "query": "밀라노 두오모",
+        "id": "D002-S01"
       },
       {
         "time": "11:00–12:00",
@@ -59,7 +63,8 @@ const days = [
         "kind": "산책",
         "desc": "아케이드 구경과 커피. 점심은 주변에서 코톨레타 또는 파스타.",
         "tip": "",
-        "query": "비토리오 에마누엘레 2세 갤러리아"
+        "query": "비토리오 에마누엘레 2세 갤러리아",
+        "id": "D002-S02"
       },
       {
         "time": "14:00–16:00",
@@ -69,7 +74,8 @@ const days = [
         "kind": "산책",
         "desc": "미술관 관람 또는 디자인 상점과 골목 산책 중 컨디션에 맞춰 선택.",
         "tip": "",
-        "query": "브레라 미술관 일대"
+        "query": "브레라 미술관 일대",
+        "id": "D002-S03"
       },
       {
         "time": "18:00–20:00",
@@ -79,9 +85,11 @@ const days = [
         "kind": "식사",
         "desc": "운하를 따라 아페리티보, 이어서 저녁. 첫날보다 여유 있게 밀라노의 밤을 즐깁니다.",
         "tip": "귀가는 지하철·택시. 소지품 주의.",
-        "query": "나빌리오 그란데"
+        "query": "나빌리오 그란데",
+        "id": "D002-S04"
       }
-    ]
+    ],
+    "id": "D002"
   },
   {
     "date": "3.28",
@@ -102,7 +110,8 @@ const days = [
         "desc": "Via Cappellini 10, Milano 20124에서 수령. 예약 차급은 자동변속 Compact 4–5 Door, 예시 차량 Jeep Avenger (Y0). 인수·외관 촬영 후 10:45~11:00 출발 목표.",
         "tip": "여권·한국 운전면허증·국제운전면허증·운전자 명의 신용카드 지참. 연료 종류·반납 연료 조건·겨울 장비의 실제 제공 품목은 인수 시 확인. 지도 핀은 주소 주변의 대표 위치.",
         "query": "Hertz Via Cappellini 10 Milano",
-        "url": ""
+        "url": "",
+        "id": "D003-S01"
       },
       {
         "time": "13:00–13:30",
@@ -112,7 +121,8 @@ const days = [
         "kind": "주차",
         "desc": "주차 후 짐을 숙소에 맡기고 구시가지는 걸어서 이동.",
         "tip": "주차장 진입 경로·ZTL 표지 확인. 차량에 짐이 보이게 두지 않기.",
-        "query": "Parking Cittadella Verona"
+        "query": "Parking Cittadella Verona",
+        "id": "D003-S02"
       },
       {
         "time": "14:30–15:30",
@@ -122,7 +132,8 @@ const days = [
         "kind": "관람",
         "desc": "브라 광장에서 점심 후 원형극장 외관 감상. 내부는 해당일 개장 확인 시 선택.",
         "tip": "",
-        "query": "베로나 아레나"
+        "query": "베로나 아레나",
+        "id": "D003-S03"
       },
       {
         "time": "15:30–17:00",
@@ -132,7 +143,8 @@ const days = [
         "kind": "산책",
         "desc": "줄리엣의 집 주변 골목과 에르베 광장 산책. 줄이 길면 안뜰 입장에 집착하지 않기.",
         "tip": "",
-        "query": "에르베 광장"
+        "query": "에르베 광장",
+        "id": "D003-S04"
       },
       {
         "time": "18:00",
@@ -142,7 +154,8 @@ const days = [
         "kind": "전망",
         "desc": "아디제 강변과 다리에서 사진을 찍고 구시가지에서 저녁.",
         "tip": "연휴 저녁 식사는 미리 예약.",
-        "query": "피에트라 다리"
+        "query": "피에트라 다리",
+        "id": "D003-S05"
       }
     ],
     "parking": [
@@ -150,9 +163,11 @@ const days = [
         "name": "Cittadella · 베로나",
         "query": "Parcheggio Cittadella Verona",
         "desc": "기존 주차 후보 유지. 구시가지 관광 전 주차하고 도보 이동. 운영·차량 높이·숙박 주차 조건 확인.",
-        "url": "https://www.amt3.it/"
+        "url": "https://www.amt3.it/",
+        "id": "D003-P01"
       }
-    ]
+    ],
+    "id": "D003"
   },
   {
     "date": "3.29",
@@ -172,7 +187,8 @@ const days = [
         "kind": "차량",
         "desc": "아침 식사 후 출발. A22에서 커피·화장실 휴식 1회를 잡고 무리해서 직행하지 않습니다.",
         "tip": "부활절 연휴 교통량과 휴게소 혼잡을 감안해 도착 시간을 30~60분 여유 있게 봅니다.",
-        "query": "베로나 출발 · Cittadella"
+        "query": "베로나 출발 · Cittadella",
+        "id": "D004-S01"
       },
       {
         "time": "13:00–14:00",
@@ -182,7 +198,8 @@ const days = [
         "kind": "도착",
         "desc": "숙소 주차 후 체크인 또는 짐 보관. 늦은 점심은 마을 안에서 해결하고 차량은 가능하면 그대로 둡니다.",
         "tip": "숙소는 Seceda 하부역과 마을 중심을 도보로 오갈 수 있는 위치를 우선합니다.",
-        "query": "Ortisei center"
+        "query": "Ortisei center",
+        "id": "D004-S02"
       },
       {
         "time": "15:30–16:30",
@@ -192,7 +209,8 @@ const days = [
         "kind": "동선 확인",
         "desc": "다음 날 탈 Ortisei–Furnes 하부역까지 걸어가 입구와 매표 위치를 확인합니다. 탑승은 다음 날로 미룹니다.",
         "tip": "2026/27 공식 운행기간은 2026-12-04~2027-04-04. 실제 운행은 강풍·기상으로 당일 중단될 수 있으므로 다음 날 아침 다시 확인합니다.",
-        "query": "Seceda Cable Car Ortisei"
+        "query": "Seceda Cable Car Ortisei",
+        "id": "D004-S03"
       },
       {
         "time": "17:00 이후",
@@ -202,7 +220,8 @@ const days = [
         "kind": "휴식",
         "desc": "가벼운 산책 뒤 숙소 스파와 이른 저녁. 첫날 체력을 남겨 두는 일정입니다.",
         "tip": "부활절 월요일 저녁 식당은 예약 권장.",
-        "query": "Ortisei pedestrian street"
+        "query": "Ortisei pedestrian street",
+        "id": "D004-S04"
       }
     ],
     "parking": [
@@ -210,9 +229,11 @@ const days = [
         "name": "오르티세이 숙소 주차 우선",
         "query": "Parcheggio Central Ortisei",
         "desc": "3박 동안 차량을 자주 쓰지 않도록 숙소 전용 주차를 최우선. 체크인 전 대안은 Parcheggio Central.",
-        "url": ""
+        "url": "",
+        "id": "D004-P01"
       }
-    ]
+    ],
+    "id": "D004"
   },
   {
     "date": "3.30",
@@ -232,7 +253,8 @@ const days = [
         "kind": "도보",
         "desc": "오르티세이 중심 숙소에서 걸어서 이동. 현장 운행 상태와 마지막 하행 시각을 확인한 뒤 왕복권을 구매합니다.",
         "tip": "운행기간은 확정됐지만 강풍·시야·정비에 따른 당일 중단 가능성은 남습니다.",
-        "query": "Seceda Cable Car Ortisei"
+        "query": "Seceda Cable Car Ortisei",
+        "id": "D005-S01"
       },
       {
         "time": "09:00–10:00",
@@ -242,7 +264,8 @@ const days = [
         "kind": "리프트",
         "desc": "공식 2026/27 운행기간이 확인된 두 구간만 이용해 정상 권역으로 올라갑니다.",
         "tip": "스키 이용객 동선과 분리해 보행자 탑승 안내를 따르고, 스키 슬로프에는 들어가지 않습니다.",
-        "query": "Furnes Seceda cable car"
+        "query": "Furnes Seceda cable car",
+        "id": "D005-S02"
       },
       {
         "time": "10:00–13:30",
@@ -252,17 +275,19 @@ const days = [
         "kind": "전망",
         "desc": "Odle 능선과 돌로미티 파노라마를 보는 핵심 시간. 사진과 전망에 집중하고 눈 상태가 허용되는 개방 구역만 짧게 걷습니다.",
         "tip": "여름 하이킹 코스를 그대로 따라가지 않습니다. 방풍·방수 신발과 선글라스 준비.",
-        "query": "Seceda Panorama Point"
+        "query": "Seceda Panorama Point",
+        "id": "D005-S03"
       },
       {
         "time": "13:30–14:30",
         "name": "정상 권역 점심",
-        "lat": 46.6000,
-        "lng": 11.7200,
+        "lat": 46.6,
+        "lng": 11.72,
         "kind": "점심",
         "desc": "당일 영업 중인 산장에서 따뜻한 점심. 특정 산장을 고정하지 않고 현장 영업 여부를 우선합니다.",
         "tip": "혼잡하면 점심을 조금 일찍 먹고 하행 대기 시간을 줄입니다.",
-        "query": "Seceda mountain hut"
+        "query": "Seceda mountain hut",
+        "id": "D005-S04"
       },
       {
         "time": "15:30 이후",
@@ -272,9 +297,11 @@ const days = [
         "kind": "휴식",
         "desc": "하산 후 카페나 숙소 스파. 저녁 일정은 비워 둡니다.",
         "tip": "",
-        "query": "Ortisei"
+        "query": "Ortisei",
+        "id": "D005-S05"
       }
-    ]
+    ],
+    "id": "D005"
   },
   {
     "date": "3.31",
@@ -294,7 +321,8 @@ const days = [
         "kind": "차량",
         "desc": "숙소에서 Siusi의 Seiser Alm 곤돌라 하부역으로 이동. 약 20km, 계획상 30분 정도 잡습니다.",
         "tip": "산 위 Compatsch까지 직접 운전하지 않고 하부역에 주차합니다.",
-        "query": "Seiser Alm Aerial Cableway valley station"
+        "query": "Seiser Alm Aerial Cableway valley station",
+        "id": "D006-S01"
       },
       {
         "time": "08:50",
@@ -304,7 +332,8 @@ const days = [
         "kind": "주차",
         "desc": "하부역의 무료 야외주차장 또는 유료 주차장을 이용합니다. 차량을 세운 뒤 곤돌라로 이동합니다.",
         "tip": "공식 안내상 하부역 무료 야외주차와 유료 주차장이 있습니다. 산 위 차량 진입은 09:00~17:00 제한되므로 올라가지 않습니다.",
-        "query": "Seiser Alm Bahn Talstation parking"
+        "query": "Seiser Alm Bahn Talstation parking",
+        "id": "D006-S02"
       },
       {
         "time": "09:00–09:20",
@@ -314,7 +343,8 @@ const days = [
         "kind": "리프트",
         "desc": "2026/27 겨울 운행이 확정된 곤돌라를 타고 Compatsch로 올라갑니다.",
         "tip": "공식 시즌: 2026-12-05~2027-04-04, 매일 08:00~18:00. 기상에 따른 당일 변동은 출발 전 재확인.",
-        "query": "Seiser Alm Aerial Cableway"
+        "query": "Seiser Alm Aerial Cableway",
+        "id": "D006-S03"
       },
       {
         "time": "09:30–13:30",
@@ -324,7 +354,8 @@ const days = [
         "kind": "전망",
         "desc": "Schlern과 Sassolungo 방향 설원을 천천히 감상합니다. 운영·제설된 겨울 산책 구간만 짧게 걷고 멀리 확장하지 않습니다.",
         "tip": "목표는 긴 트레킹이 아니라 설원 풍경과 사진. 체력과 노면 상태를 보고 즉시 축소할 수 있게 합니다.",
-        "query": "Compatsch Alpe di Siusi"
+        "query": "Compatsch Alpe di Siusi",
+        "id": "D006-S04"
       },
       {
         "time": "13:30–14:30",
@@ -334,7 +365,8 @@ const days = [
         "kind": "점심",
         "desc": "Compatsch 권역에서 영업 중인 식당을 골라 점심. 리프트를 추가로 갈아타는 일정은 넣지 않습니다.",
         "tip": "추가 리프트는 2027 개별 운행 확인 전까지 일정에서 제외.",
-        "query": "Compatsch restaurant"
+        "query": "Compatsch restaurant",
+        "id": "D006-S05"
       },
       {
         "time": "15:00–16:00",
@@ -344,7 +376,8 @@ const days = [
         "kind": "귀환",
         "desc": "혼잡 전 하산해 차로 오르티세이 숙소로 돌아옵니다. 마지막 밤은 스파와 저녁으로 마무리합니다.",
         "tip": "다음 날 베네치아 장거리 이동을 위해 짐은 저녁에 미리 정리합니다.",
-        "query": "Ortisei"
+        "query": "Ortisei",
+        "id": "D006-S06"
       }
     ],
     "parking": [
@@ -352,9 +385,11 @@ const days = [
         "name": "Seiser Alm 곤돌라 하부역 주차",
         "query": "Seiser Alm Bahn Talstation parking",
         "desc": "공식 안내상 대형 무료 야외주차장과 유료 Walderer/하부역 주차장이 있습니다. 당일 주차 후 곤돌라 이용.",
-        "url": "https://www.seiseralm.it/en/info-service/mobility/seiser-alm-aerial-cableway-winter.html"
+        "url": "https://www.seiseralm.it/en/info-service/mobility/seiser-alm-aerial-cableway-winter.html",
+        "id": "D006-P01"
       }
-    ]
+    ],
+    "id": "D006"
   },
   {
     "date": "4.1",
@@ -374,7 +409,8 @@ const days = [
         "kind": "차량",
         "desc": "조식 후 출발. 중간 휴식 포함 오후 초반 주차장 도착 목표.",
         "tip": "",
-        "query": "오르티세이 출발"
+        "query": "오르티세이 출발",
+        "id": "D007-S01"
       },
       {
         "time": "13:30",
@@ -384,7 +420,8 @@ const days = [
         "kind": "주차",
         "desc": "차를 주차하고 바포레토 또는 피플무버 연계로 숙소 이동.",
         "tip": "24시간 이상 주차·수상버스 표 확인. 본섬 호텔 주소를 차량 내비 목적지로 넣지 않기.",
-        "query": "트론케토 주차장"
+        "query": "트론케토 주차장",
+        "id": "D007-S02"
       },
       {
         "time": "16:00",
@@ -394,7 +431,8 @@ const days = [
         "kind": "산책",
         "desc": "체크인 후 대운하와 골목 산책. 바카로에서 치케티로 간단히 요기.",
         "tip": "",
-        "query": "리알토 다리"
+        "query": "리알토 다리",
+        "id": "D007-S03"
       },
       {
         "time": "17:30–19:30",
@@ -404,7 +442,8 @@ const days = [
         "kind": "전망",
         "desc": "저녁빛의 광장과 해안 산책. 곤돌라는 날씨·대기·현장 요금을 보고 선택.",
         "tip": "2027년 입도료 시행일과 숙박객 면제 절차는 공식 공지 재확인.",
-        "query": "산마르코 광장"
+        "query": "산마르코 광장",
+        "id": "D007-S04"
       }
     ],
     "parking": [
@@ -412,9 +451,11 @@ const days = [
         "name": "Tronchetto Parking · 베네치아",
         "query": "Tronchetto Parking Venezia",
         "desc": "공식 안내 24시간 운영, ZTL 밖. 바포레토·People Mover 연계. 4/1 입차~4/2 출차 기준 요금 확인.",
-        "url": "https://www.tronchettoparking.it/it/"
+        "url": "https://www.tronchettoparking.it/it/",
+        "id": "D007-P01"
       }
-    ]
+    ],
+    "id": "D007"
   },
   {
     "date": "4.2",
@@ -430,19 +471,22 @@ const days = [
         "name": "Santa Caterina · 기본 주차장",
         "query": "Parcheggio Santa Caterina Siena",
         "desc": "성벽 밖에 주차한 뒤 에스컬레이터로 구시가지 접근. 숙소 전용 주차가 있으면 우선 이용.",
-        "url": "https://sigericospa.it/parcheggi-in-struttura/"
+        "url": "https://sigericospa.it/parcheggi-in-struttura/",
+        "id": "D008-P01"
       },
       {
         "name": "Il Campo · 대안",
         "query": "Parcheggio Il Campo Siena",
         "desc": "캄포 광장 방문 대안. 내비에 광장이 아니라 주차장명을 입력하고 ZTL 표지와 공식 진입 안내를 확인.",
-        "url": "https://sigericospa.it/parcheggi-in-struttura/"
+        "url": "https://sigericospa.it/parcheggi-in-struttura/",
+        "id": "D008-P02"
       },
       {
         "name": "Cantagallo Ovest · 남행 휴게소",
         "query": "Area di Servizio Cantagallo Ovest A1 direzione Firenze",
         "desc": "A1 198.9km DirSUD. 고속도로 안에서 주유·식사·주차. 상용차 전용 주유구역 대신 실제 차량에 맞는 주유기 확인.",
-        "url": "https://www.q8truck.com/pt/stations/cantagallo-ovest-boa1-q8-it3888"
+        "url": "https://www.q8truck.com/pt/stations/cantagallo-ovest-boa1-q8-it3888",
+        "id": "D008-P03"
       }
     ],
     "spots": [
@@ -455,7 +499,8 @@ const days = [
         "desc": "아침 광장과 조식. 큰 짐은 체크아웃 동선에 맞춰 정리.",
         "tip": "",
         "query": "산마르코 광장",
-        "url": ""
+        "url": "",
+        "id": "D008-S01"
       },
       {
         "time": "09:00–10:00",
@@ -466,7 +511,8 @@ const days = [
         "desc": "공식 예약 가능 시간에 맞춰 관람. 오전 예약이 불가능하면 광장 산책으로 대체.",
         "tip": "예약 미확정. 10시 무렵 주차장으로 이동 시작.",
         "query": "산마르코 대성당",
-        "url": ""
+        "url": "",
+        "id": "D008-S02"
       },
       {
         "time": "11:00–11:30",
@@ -477,7 +523,8 @@ const days = [
         "desc": "차량 회수 후 A13–볼로냐–A1 남행으로 시에나 이동. 약 2~2.5시간 뒤 Cantagallo Ovest에서 주유·점심·휴식.",
         "tip": "본섬에서 주차장 이동 시간을 확보.",
         "query": "Tronchetto Parking Venezia",
-        "url": "https://www.tronchettoparking.it/it/"
+        "url": "https://www.tronchettoparking.it/it/",
+        "id": "D008-S03"
       },
       {
         "time": "13:30–14:30 예상",
@@ -488,7 +535,8 @@ const days = [
         "desc": "볼로냐 남쪽 A1 198.9km, Firenze/Roma 남행 방향 휴게소. 주유·화장실·점심을 한 번에 해결하고 45~60분 휴식. Autogrill의 La Fucina 셀프서비스 식당 또는 Bistrot Bakery 피자·포카치아 중 선택.",
         "tip": "반대편 Est와 혼동하지 말고 A1 남행 Cantagallo Ovest 표지로 진입. 주유소 공식 자료는 디젤 등 상용차 설비를 안내하므로 렌터카 연료에 맞는 승용차 주유기·결제 가능 여부를 현장에서 확인. 식당 영업·메뉴는 2027년 재확인.",
         "query": "Area di Servizio Cantagallo Ovest A1 direzione Firenze",
-        "url": "https://www.autogrill.it/locale/cantagallo/"
+        "url": "https://www.autogrill.it/locale/cantagallo/",
+        "id": "D008-S04"
       },
       {
         "time": "16:30–17:30 예상",
@@ -499,7 +547,8 @@ const days = [
         "desc": "숙소 주차 또는 Santa Caterina 이용 후 체크인. 도착 시간은 교통 상황에 따라 조정.",
         "tip": "지도 핀은 대표 위치. 아래 주차장명 길찾기와 현장 진입 표지를 우선.",
         "query": "Parcheggio Santa Caterina Siena",
-        "url": "https://sigericospa.it/parcheggi-in-struttura/"
+        "url": "https://sigericospa.it/parcheggi-in-struttura/",
+        "id": "D008-S05"
       },
       {
         "time": "18:00–20:00",
@@ -510,9 +559,11 @@ const days = [
         "desc": "짧은 골목 산책과 피치 파스타 저녁. 장거리 이동 후 충분히 휴식.",
         "tip": "",
         "query": "캄포 광장",
-        "url": ""
+        "url": "",
+        "id": "D008-S06"
       }
-    ]
+    ],
+    "id": "D008"
   },
   {
     "date": "4.3",
@@ -528,13 +579,15 @@ const days = [
         "name": "Santa Caterina · 기본 주차장",
         "query": "Parcheggio Santa Caterina Siena",
         "desc": "성벽 밖에 주차한 뒤 에스컬레이터로 구시가지 접근. 숙소 전용 주차가 있으면 우선 이용.",
-        "url": "https://sigericospa.it/parcheggi-in-struttura/"
+        "url": "https://sigericospa.it/parcheggi-in-struttura/",
+        "id": "D009-P01"
       },
       {
         "name": "Il Campo · 대안",
         "query": "Parcheggio Il Campo Siena",
         "desc": "캄포 광장 방문 대안. 내비에 광장이 아니라 주차장명을 입력하고 ZTL 표지와 공식 진입 안내를 확인.",
-        "url": "https://sigericospa.it/parcheggi-in-struttura/"
+        "url": "https://sigericospa.it/parcheggi-in-struttura/",
+        "id": "D009-P02"
       }
     ],
     "spots": [
@@ -547,7 +600,8 @@ const days = [
         "desc": "대성당과 통합권 포함 시설을 취향에 맞춰 관람. 예약 가능 시간 확인.",
         "tip": "",
         "query": "시에나 대성당",
-        "url": ""
+        "url": "",
+        "id": "D009-S01"
       },
       {
         "time": "12:00–14:00",
@@ -558,7 +612,8 @@ const days = [
         "desc": "점심 후 광장에 앉아 쉬기. 만자 탑은 체력과 입장 상황에 따라 선택.",
         "tip": "",
         "query": "캄포 광장",
-        "url": ""
+        "url": "",
+        "id": "D009-S02"
       },
       {
         "time": "14:30–16:00",
@@ -569,7 +624,8 @@ const days = [
         "desc": "구시가지 골목과 성당 주변 전망 산책. 피곤하면 카페·숙소 휴식.",
         "tip": "",
         "query": "산 도메니코 성당",
-        "url": ""
+        "url": "",
+        "id": "D009-S03"
       },
       {
         "time": "18:30",
@@ -580,9 +636,11 @@ const days = [
         "desc": "도보로 저녁 식사. 다음 날 농가 이동을 위해 짐 정리.",
         "tip": "",
         "query": "시에나 구시가지",
-        "url": ""
+        "url": "",
+        "id": "D009-S04"
       }
-    ]
+    ],
+    "id": "D009"
   },
   {
     "date": "4.4",
@@ -598,19 +656,22 @@ const days = [
         "name": "몬탈치노 · Fortezza 주변 주차 후보",
         "query": "Parcheggio Fortezza Montalcino",
         "desc": "성곽 바깥 주차 후보. 정확한 입구·공사·요금은 현지 표지에서 확인. 지도 검색 결과에서 주차장 선택.",
-        "url": ""
+        "url": "",
+        "id": "D010-P01"
       },
       {
         "name": "바뇨 비뇨니 · 마을 입구 공영주차",
         "query": "Parcheggio Bagno Vignoni",
         "desc": "중앙 수조로 진입하지 말고 마을 입구 주차 표지를 따르기. 현지 운영 확인.",
-        "url": ""
+        "url": "",
+        "id": "D010-P02"
       },
       {
         "name": "피엔차 · 성벽 밖 공영주차",
         "query": "Parcheggio Pienza",
         "desc": "역사 중심부를 목적지로 운전하지 말고 성벽 밖 주차장을 선택. 일요일 혼잡 시 여유 시간 확보.",
-        "url": ""
+        "url": "",
+        "id": "D010-P03"
       }
     ],
     "spots": [
@@ -623,7 +684,8 @@ const days = [
         "desc": "체크아웃 후 차량 회수. 짐은 외부에서 보이지 않게 정리.",
         "tip": "",
         "query": "Parcheggio Santa Caterina Siena",
-        "url": ""
+        "url": "",
+        "id": "D010-S01"
       },
       {
         "time": "10:15–11:45",
@@ -634,7 +696,8 @@ const days = [
         "desc": "브루넬로의 마을에서 성곽과 전망 산책. 운전자는 시음하지 않고 병 구매만.",
         "tip": "성곽 바깥 주차 후 도보.",
         "query": "Fortezza Montalcino",
-        "url": "https://www.visittuscany.com/en/towns-and-villages/montalcino/"
+        "url": "https://www.visittuscany.com/en/towns-and-villages/montalcino/",
+        "id": "D010-S02"
       },
       {
         "time": "12:15–13:15",
@@ -645,7 +708,8 @@ const days = [
         "desc": "온천 광장 산책과 가벼운 점심. 중앙 수조는 목욕 장소가 아닙니다.",
         "tip": "",
         "query": "바뇨 비뇨니",
-        "url": ""
+        "url": "",
+        "id": "D010-S03"
       },
       {
         "time": "14:00–15:30",
@@ -656,7 +720,8 @@ const days = [
         "desc": "전망 산책로와 골목, 페코리노 치즈 가게. 농가 체크인을 위해 오후 일찍 출발.",
         "tip": "",
         "query": "피엔차",
-        "url": ""
+        "url": "",
+        "id": "D010-S04"
       },
       {
         "time": "16:30",
@@ -667,7 +732,8 @@ const days = [
         "desc": "추천 농가에서 2박. 트레콴다 권역 핀은 대략 위치이며 길찾기는 숙소명으로 연결됩니다.",
         "tip": "예약 시 전용 주차·진입로·체크인 마감·4/4와 4/5 저녁 운영 확인.",
         "query": "Fattoria del Colle · Trequanda",
-        "url": "https://www.cinellicolombini.it/turismo/camere/"
+        "url": "https://www.cinellicolombini.it/turismo/camere/",
+        "id": "D010-S05"
       },
       {
         "time": "19:00",
@@ -678,9 +744,11 @@ const days = [
         "desc": "식당 운영과 예약 확정 시 농가에서 저녁. 운영하지 않으면 시음 전 이동 가능한 식당 또는 숙소 식사 대안을 준비.",
         "tip": "숙소·식사·투어 모두 예약 미확정.",
         "query": "Fattoria del Colle · Trequanda",
-        "url": "https://www.cinellicolombini.it/turismo/camere/"
+        "url": "https://www.cinellicolombini.it/turismo/camere/",
+        "id": "D010-S06"
       }
-    ]
+    ],
+    "id": "D010"
   },
   {
     "date": "4.5",
@@ -701,7 +769,8 @@ const days = [
         "desc": "조식 후 농가 부지의 개방된 산책 구역에서 휴식. 4월에는 포도 수확 체험을 전제로 하지 않습니다.",
         "tip": "정확한 위치·주차는 숙소 안내 기준.",
         "query": "Fattoria del Colle · Trequanda",
-        "url": "https://www.cinellicolombini.it/turismo/camere/"
+        "url": "https://www.cinellicolombini.it/turismo/camere/",
+        "id": "D011-S01"
       },
       {
         "time": "11:30–13:30",
@@ -712,7 +781,8 @@ const days = [
         "desc": "컨디션이 좋으면 가까운 마을에서 점심. 차량 이동을 마치고 농가로 돌아온 뒤 시음.",
         "tip": "구시가지 바깥 주차 표지 이용. 쉬고 싶으면 농가에 머물기.",
         "query": "Trequanda",
-        "url": ""
+        "url": "",
+        "id": "D011-S02"
       },
       {
         "time": "15:30–16:30",
@@ -723,7 +793,8 @@ const days = [
         "desc": "빌라·정원·역사적 저장고와 와인 3종 시음. 공식 현행 안내 약 1시간, 1인 €29.50; 2027년 가격·월요일 운영·영어 진행은 예약 시 재확인.",
         "tip": "투어 후 운전 일정 없음. 숙소 안에서 진행되는 프로그램으로 예약.",
         "query": "Fattoria del Colle · Trequanda",
-        "url": "https://www.cinellicolombini.it/dettaglio/sale-della-villa-del-cinquecento-cappella-giardini-antichi-cantina-storica-con-degustazione-itinerante/"
+        "url": "https://www.cinellicolombini.it/dettaglio/sale-della-villa-del-cinquecento-cappella-giardini-antichi-cantina-storica-con-degustazione-itinerante/",
+        "id": "D011-S03"
       },
       {
         "time": "17:00–저녁",
@@ -734,9 +805,11 @@ const days = [
         "desc": "농가에서 느긋한 저녁. 다음 날 피렌체로 이동할 준비.",
         "tip": "당일 식당 운영과 저녁 예약 필수 확인.",
         "query": "Fattoria del Colle · Trequanda",
-        "url": "https://www.cinellicolombini.it/turismo/camere/"
+        "url": "https://www.cinellicolombini.it/turismo/camere/",
+        "id": "D011-S04"
       }
-    ]
+    ],
+    "id": "D011"
   },
   {
     "date": "4.6",
@@ -757,7 +830,8 @@ const days = [
         "desc": "A1에서 전용 출구로 진입해 주차. 트램 T1으로 피렌체 도심 이동 후 짐 보관.",
         "tip": "2027년 요금·차량 조건 재확인. 호텔 전용 주차를 선택하면 실제 출발·회수 장소도 함께 변경.",
         "query": "Parcheggio Villa Costanza Scandicci",
-        "url": "https://parcheggiovillacostanza.it/en/faq/"
+        "url": "https://parcheggiovillacostanza.it/en/faq/",
+        "id": "D012-S01"
       },
       {
         "time": "13:00–15:00",
@@ -767,7 +841,8 @@ const days = [
         "kind": "관람",
         "desc": "점심 후 대성당 광장과 주변 골목 산책. 돔 등반은 원하면 예약 시간에 맞춰 추가.",
         "tip": "돔 등반은 체력·계단을 고려. 이 기본안은 외관 중심.",
-        "query": "피렌체 두오모"
+        "query": "피렌체 두오모",
+        "id": "D012-S02"
       },
       {
         "time": "15:30",
@@ -777,7 +852,8 @@ const days = [
         "kind": "산책",
         "desc": "야외 조각을 보고 젤라토 휴식.",
         "tip": "",
-        "query": "시뇨리아 광장"
+        "query": "시뇨리아 광장",
+        "id": "D012-S03"
       },
       {
         "time": "17:00–19:00",
@@ -787,7 +863,8 @@ const days = [
         "kind": "전망",
         "desc": "아르노 강변을 걷고 올트라르노에서 저녁.",
         "tip": "",
-        "query": "베키오 다리"
+        "query": "베키오 다리",
+        "id": "D012-S04"
       }
     ],
     "parking": [
@@ -795,9 +872,11 @@ const days = [
         "name": "Villa Costanza · 피렌체 2박",
         "query": "Parcheggio Villa Costanza Scandicci",
         "desc": "A1 고속도로에서만 차량 진입. 트램 T1으로 SMN역까지 공식 안내 약 22분. 최대 30일 연속 주차 가능, 트램 별도 결제. 2027년 요금 재확인.",
-        "url": "https://parcheggiovillacostanza.it/en/faq/"
+        "url": "https://parcheggiovillacostanza.it/en/faq/",
+        "id": "D012-P01"
       }
-    ]
+    ],
+    "id": "D012"
   },
   {
     "date": "4.7",
@@ -817,7 +896,8 @@ const days = [
         "kind": "예약",
         "desc": "보티첼리와 르네상스 작품 중심으로 약 3시간 관람. 공식 시간 지정 예약 추천.",
         "tip": "",
-        "query": "우피치 미술관"
+        "query": "우피치 미술관",
+        "id": "D013-S01"
       },
       {
         "time": "12:30–15:00",
@@ -827,7 +907,8 @@ const days = [
         "kind": "식사",
         "desc": "올트라르노에서 점심 후 공방 골목. 중간에 호텔에서 쉬어도 좋습니다.",
         "tip": "",
-        "query": "산토 스피리토 광장"
+        "query": "산토 스피리토 광장",
+        "id": "D013-S02"
       },
       {
         "time": "17:30–19:30",
@@ -837,7 +918,8 @@ const days = [
         "kind": "전망",
         "desc": "해 지기 전 도착해 피렌체 전경과 노을 사진. 실제 일몰·날씨에 맞춰 시간을 조정.",
         "tip": "오르막은 버스·택시로 이동 가능. 차는 숙소에 두기.",
-        "query": "미켈란젤로 광장"
+        "query": "미켈란젤로 광장",
+        "id": "D013-S03"
       },
       {
         "time": "20:00",
@@ -847,7 +929,8 @@ const days = [
         "kind": "식사",
         "desc": "여행 후반의 기념 저녁. 비스테카는 2인 양·가격을 먼저 확인 후 주문.",
         "tip": "",
-        "query": "산토 스피리토 일대"
+        "query": "산토 스피리토 일대",
+        "id": "D013-S04"
       }
     ],
     "parking": [
@@ -855,9 +938,11 @@ const days = [
         "name": "Villa Costanza · 피렌체 2박",
         "query": "Parcheggio Villa Costanza Scandicci",
         "desc": "A1 고속도로에서만 차량 진입. 트램 T1으로 SMN역까지 공식 안내 약 22분. 최대 30일 연속 주차 가능, 트램 별도 결제. 2027년 요금 재확인.",
-        "url": "https://parcheggiovillacostanza.it/en/faq/"
+        "url": "https://parcheggiovillacostanza.it/en/faq/",
+        "id": "D013-P01"
       }
-    ]
+    ],
+    "id": "D013"
   },
   {
     "date": "4.8",
@@ -877,7 +962,8 @@ const days = [
         "kind": "차량",
         "desc": "실제 주차 장소에서 차를 찾아 파르마로 출발. 고속도로 휴식 1회.",
         "tip": "",
-        "query": "Villa Costanza · 차량 회수"
+        "query": "Villa Costanza · 차량 회수",
+        "id": "D014-S01"
       },
       {
         "time": "13:00",
@@ -887,7 +973,8 @@ const days = [
         "kind": "주차",
         "desc": "주차·체크인 후 점심. 진입 경로는 주차장 공식 안내 확인.",
         "tip": "",
-        "query": "Parcheggio Toschi Parma"
+        "query": "Parcheggio Toschi Parma",
+        "id": "D014-S02"
       },
       {
         "time": "14:30–16:00",
@@ -897,7 +984,8 @@ const days = [
         "kind": "관람",
         "desc": "대성당과 세례당 광장 산책. 내부는 개관·입장권 확인 후 관람.",
         "tip": "",
-        "query": "파르마 대성당"
+        "query": "파르마 대성당",
+        "id": "D014-S03"
       },
       {
         "time": "16:30",
@@ -907,7 +995,8 @@ const days = [
         "kind": "산책",
         "desc": "광장 산책 또는 운영 시 테아트로 파르네세 관람 중 선택.",
         "tip": "",
-        "query": "팔라초 델라 필로타"
+        "query": "팔라초 델라 필로타",
+        "id": "D014-S04"
       },
       {
         "time": "19:00",
@@ -917,7 +1006,8 @@ const days = [
         "kind": "식사",
         "desc": "프로슈토 디 파르마, 파르미자노 레자노, 토르텔리로 마지막 만찬. 숙소까지 도보.",
         "tip": "",
-        "query": "가리발디 광장 Parma"
+        "query": "가리발디 광장 Parma",
+        "id": "D014-S05"
       }
     ],
     "parking": [
@@ -925,9 +1015,11 @@ const days = [
         "name": "Toschi · 파르마",
         "query": "Parcheggio Toschi Parma",
         "desc": "기존 주차 후보 유지. 도심 관광·1박 주차는 숙소 전용 주차와 비교하고 진입로·운영을 출발 전 확인.",
-        "url": ""
+        "url": "",
+        "id": "D014-P01"
       }
-    ]
+    ],
+    "id": "D014"
   },
   {
     "date": "4.9",
@@ -948,7 +1040,8 @@ const days = [
         "desc": "조식 후 간단한 식품 쇼핑과 체크아웃. 점심은 일찍 먹거나 이동 중 간단히 해결.",
         "tip": "16시 시내 반납에 맞춰 오전 관광을 짧게.",
         "query": "Piazza Garibaldi Parma",
-        "url": ""
+        "url": "",
+        "id": "D015-S01"
       },
       {
         "time": "11:30 출발 목표",
@@ -959,7 +1052,8 @@ const days = [
         "desc": "파르마에서 밀라노 중앙역 권역으로 출발. 공항으로 바로 운전하지 않습니다.",
         "tip": "금요일 시내 정체·주유·주차장 진입을 위해 여유 확보.",
         "query": "Parcheggio Toschi Parma",
-        "url": ""
+        "url": "",
+        "id": "D015-S02"
       },
       {
         "time": "14:00–15:00",
@@ -970,7 +1064,8 @@ const days = [
         "desc": "Hertz 인수 시 확인한 연료 조건에 맞춰 반납점 접근 전 주유. 실제 진입 경로의 영업 중 주유소를 선택하고 영수증 보관.",
         "tip": "지도 핀은 반납 권역의 대표 위치이며 특정 주유소가 아닙니다. 내비에서 차량 연료에 맞는 주유소 확인.",
         "query": "distributore carburante vicino Via Alfredo Cappellini Milano",
-        "url": ""
+        "url": "",
+        "id": "D015-S03"
       },
       {
         "time": "15:30 도착 / 16:00 예약",
@@ -981,7 +1076,8 @@ const days = [
         "desc": "Via Alfredo Cappellini 21, Milano 20124 · 5층 반납 구역. Hertz 반납 표지를 따라 진입하고 차량 사진·반납 확인서를 확보.",
         "tip": "수령점 Via Cappellini 10으로 가지 않기. 정확한 차량 입구·진입 경로는 수령할 때 확인. 16시까지 인계를 마치도록 일찍 도착.",
         "query": "Hertz return Via Alfredo Cappellini 21 Milano",
-        "url": ""
+        "url": "",
+        "id": "D015-S04"
       },
       {
         "time": "16:30–17:30 출발편 목표",
@@ -992,7 +1088,8 @@ const days = [
         "desc": "반납 후 도보 또는 택시로 Milano Centrale 이동. Malpensa Express로 항공권의 출발 터미널까지 이동. 도보·승강장 이동·대기를 포함해 여유 확보.",
         "tip": "현재 공식 안내는 중앙역 출발 약 30분 간격. 2027년 4/9 실제 시간표·파업·터미널 확인 후 승차권 구매.",
         "query": "Milano Centrale",
-        "url": "https://www.malpensaexpress.it/en/lines-and-timetable/lines-and-timetables/timetable/"
+        "url": "https://www.malpensaexpress.it/en/lines-and-timetable/lines-and-timetables/timetable/",
+        "id": "D015-S05"
       },
       {
         "time": "18:00–19:00 도착 / 22:00 출발",
@@ -1003,8 +1100,10 @@ const days = [
         "desc": "19시 전 출발 터미널 도착 목표. 체크인·수하물·보안 검색 후 KE928 탑승.",
         "tip": "항공권의 출발 시각과 터미널, 항공사 도착 권고를 최종 확인.",
         "query": "Milano Malpensa Airport",
-        "url": ""
+        "url": "",
+        "id": "D015-S06"
       }
-    ]
+    ],
+    "id": "D015"
   }
 ];
